@@ -1,0 +1,16 @@
+modules = ["nodejs-20", "python-3.11", "web"]
+run = "python3 server.py"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "run"]
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
+
+[[ports]]
+localPort = 8000
+externalPort = 80
