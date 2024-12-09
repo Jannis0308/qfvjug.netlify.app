@@ -7,6 +7,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="admin.js" defer></script>
+    <script src="script.js"></script>
+    
   </head>
   <body>
     <header>
@@ -21,7 +23,14 @@
         </ul>
       </nav>
     </header>
-    <div>
+    <p>
+       Hallo Hier sit immer sichtbar
+    </p>
+    <button onclick="toggleVisibility()">
+      Toggle Visibilite
+    </button>
+    
+    <div id="video-upload-section">
     <h1>Video Upload</h1>
     <input type="text" id="youtube-link" placeholder="Paste YouTube link" />
     <button id="upload-button">Upload Video</button>
